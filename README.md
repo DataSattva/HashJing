@@ -4,6 +4,8 @@
 
 ![изображение](https://github.com/user-attachments/assets/142b76fb-0793-4ea7-b17f-7201e08be5f9)
 
+*Мандала, построенная из SHA256-хэша собственного названия проекта "HashJing":*  
+`0x2b054d225d025fc24c58030bda276b16089ae21cc8aff93d2751472a98eab06c`
 
 ## Что это такое
 
