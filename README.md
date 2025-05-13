@@ -1,27 +1,59 @@
 # HashJing
 
-**HashJing** is a generative art project inspired by the *Book of Changes (I Ching)*, binary codes, and cryptographic hashes.
+**HashJing** — это генеративный арт-проект, исследующий границу между случайностью и порядком через визуальное представление 256-битных хэшей. Проект вдохновлён древнекитайской *Книгой Перемен (易经)*, бинарной логикой и эстетикой минимализма.
 
-## What Is It?
+---
 
-**HashJing** visualizes hashes (e.g., Ethereum or Bitcoin) as mandalas — circular diagrams influenced by ancient Chinese representations of binary systems and the *gua* signs (trigrams and hexagrams) from the I Ching.
+## Что это такое?
 
-The name *HashJing* is a portmanteau of “Hash” and “I Ching” (or “Jing” in Chinese, pinyin spelling). We chose “Jing” to preserve the authentic Chinese transcription.
+HashJing преобразует хэши (например, Ethereum, Bitcoin или криптографически случайные seed'ы) в **мандалы** — круговые диаграммы, построенные из 64 секторов и 4 радиальных слоёв. Каждый сектор соответствует одной hex-цифре, каждый слой — одному биту. Таким образом, визуализация полностью и однозначно отражает 256-битную строку.
 
-The project bridges an ancient philosophy of transformation with modern cryptographic paradigms: every bit has meaning; every pattern encodes a message.
+Эта структура одновременно минималистична и насыщена смыслом: отсылая к гексаграммам Ицзина и архетипу круга, она превращает техническую информацию в объект созерцания.
 
-## Foundations
+---
 
-- Mathematics of hashing  
-- Graphical patterns in the style of the I Ching  
-- Symbolic visualizations of binary data  
-- Philosophical references (e.g., Leibniz, who drew inspiration from the I Ching for binary representation)
+## Основные идеи проекта
 
-## Project Structure
+* Бинарные паттерны как источник формы
+* Случайность как наблюдаемая структура
+* Перекличка с гексаграммами 易经 и принципами перемены
+* Криптографический хэш как форма отпечатка / печати
+* Полная детерминированность и обратимость визуального представления
+
+---
+
+## Структура проекта
 
 ```text
-├── index.html               # Main HTML file with Canvas + styles and logic
-├── hashjing_prototype.ipynb # Jupyter prototype with code and visuals
-├── hash_examples/           # Collection of interesting sample hashes
-└── README.md                # You are here
+├── index.html                 # Основной HTML-файл с Canvas-визуализацией
+├── hashjing_prototype.ipynb # Прототип в Jupyter: код, примеры, визуалы и пояснения
+├── preview/mandalas/        # Галерея примеров визуализаций
+├── ArtManifesto.md          # Арт-манифест на русском
+└── README.md                # Этот файл
 ```
+
+---
+
+## Техническая реализация
+
+HashJing совместим с платформами генеративного искусства, такими как **Art Blocks**. Визуализация создаётся на основе хэша, полученного либо:
+
+* от случайного seed (генерируемого off-chain или через VRF),
+* либо от `token_hash` в Art Blocks Engine,
+* либо от ввода пользователя (для локального теста).
+
+Визуальный вывод строго детерминирован: один и тот же хэш → одна и та же мандала.
+
+---
+
+## Дополнительно
+
+* Философская и культурная база раскрыта в `ArtManifesto.md`
+* Примеры визуализаций и вероятностных совпадений — в `hash_examples/` и `whitepaper.ipynb`
+* Проект открыт для расширения: возможна генерация редкостей, геймификация, исследование симметрий
+
+---
+
+## Попробуйте
+
+Откройте `index.html`, вставьте свой хэш — и узнайте, как выглядит ваша собственная **мандала случайности**. 
