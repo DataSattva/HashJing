@@ -20,7 +20,7 @@ HashJing преобразует хэши (например, Ethereum, Bitcoin и
 
 ```text
 ├── index.html                 # Основной HTML-файл с Canvas-визуализацией
-├── hashjing_prototype.ipynb # Прототип в Jupyter: код, примеры, визуалы и пояснения
+├── Whitepaper.ipynb # Прототип в Jupyter: код, примеры, визуалы и пояснения
 ├── preview/mandalas/        # Галерея примеров визуализаций
 ├── ArtManifesto.md          # Арт-манифест на русском
 └── README.md                # Этот файл
