@@ -25,8 +25,6 @@ HashJing преобразует 256-битные строки (например,
 
 ```text
 ├── index.html                 # HTML-файл с Canvas-визуализацией
-├── script.js                  # JS-логика генерации мандалы по хэшу
-├── style.css                  # Стили для визуализации
 ├── hashjing_prototype.ipynb  # Jupyter-прототип: код, визуалы, пояснения
 ├── preview/mandalas/         # Галерея примеров
 ├── ArtManifesto.md            # Арт-манифест
